@@ -23,4 +23,10 @@ document.querySelectorAll("#to-currency-list a").forEach((menu) => {
   });
 });
 
-function convert() {}
+function convert() {
+  // console.log("key up event issue" );
+  let amount = document.getElementById("from-input").value;
+  let convertAmount = amount * currencyRatio[fromCUrrency][toCurrency];
+
+  document.getElementById("to-input").value = convertAmount;
+}
