@@ -22,3 +22,5 @@ document.querySelectorAll("#to-currency-list a").forEach((menu) => {
     toCurrency = this.textContent;
   });
 });
+
+function convert() {}
